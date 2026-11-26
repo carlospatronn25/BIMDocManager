@@ -1,0 +1,24 @@
+BIM DOC MANAGER 7.0 - VERSION PORTABLE (WINDOWS)
+================================================
+No necesitas instalar Python ni nada más.
+
+1. Descomprime este ZIP en cualquier carpeta (por ejemplo, el Escritorio).
+2. Haz doble clic en BIM_Doc_Manager.exe. La primera vez puede tardar unos segundos.
+3. Si Windows muestra "Windows protegió su PC" (SmartScreen), pulsa
+   "Más información" y luego "Ejecutar de todos modos". Ocurre porque el programa
+   no tiene firma digital comercial.
+
+PRUEBA RAPIDA CON LOS DATOS DE EJEMPLO
+1. Pulsa "Seleccionar carpeta..." y elige la carpeta datos_ejemplo\documentos.
+2. Pulsa "Cargar documentos".
+3. Pulsa "Importar metadatos CSV" y elige datos_ejemplo\metadatos_ejemplo.csv.
+4. Pulsa "Validar nomenclatura". Resultado esperado:
+   - plano final.pdf          -> OBR01-EQ02-E01-P00-PLA-EST-007.pdf   (LISTO PARA GENERAR)
+   - estructura corregida.pdf -> OBR01-EQ02-E01-P01-PLA-EST-008.pdf   (BLOQUEADO: nombre repetido)
+   - estructura v2.pdf        -> OBR01-EQ02-E01-P01-PLA-EST-008.pdf   (BLOQUEADO: nombre repetido)
+   - detalle escalera.pdf     -> sin nombre                            (PENDIENTE: falta la disciplina)
+5. Pulsa "Generar copias válidas" y confirma. Solo se copia el documento listo.
+
+Los archivos originales nunca se modifican. Consulta el manual incluido (PDF).
+Esta versión portable abre la aplicación de escritorio. Las versiones web y de
+teléfono requieren Python (ver README.md del repositorio).
